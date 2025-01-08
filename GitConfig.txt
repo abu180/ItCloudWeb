@@ -1,0 +1,28 @@
+First of all we should have instaled git. If not, we have to access this link: https://git-scm.com/downloads/win 
+After that, close the VSC window and open it again. Try in the terminal to see the git version "git --version"
+Next step is config the username and mail. 
+    git config --global user.name "your name"
+    git config --global user.email "your email"
+Once we did that, we have to do
+    git init 
+    git add .
+    git commit -m "Inital Commit"
+
+    - To copy the project in your github repository
+    git remote add origin https://github.com/tu-usuario/nombre-del-repositorio.git
+
+    - To push the project 
+    git branch -M main
+    git push -u origin main
+
+    - To acces with other device: 
+    git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+    cd + folder name
+    npm install
+    npm start
+
+    - To add new changes
+    git status
+    git add .
+    git commit -m "description"
+    git push
