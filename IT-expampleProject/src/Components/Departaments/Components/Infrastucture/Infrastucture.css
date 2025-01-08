@@ -1,0 +1,69 @@
+.infrastructure-section {
+  position: relative;
+  width: 100%;
+  height: 200vh; /* Aseguramos que la sección sea más alta que la pantalla para permitir el scroll */
+  overflow: hidden;
+}
+
+.image-container {
+  position: absolute; /* Cambiar a absolute para que no ocupe toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 50%; /* La imagen ocupa solo la mitad de la pantalla */
+  height: 100%;
+  overflow: hidden;
+}
+
+.fixed-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-container {
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+}
+
+.content-box {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.content-box h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.content-box p {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Posición de los textos */
+.content-box:nth-child(1) {
+  top: 10%;
+  left: 60%;
+}
+
+.content-box:nth-child(2) {
+  top: 40%;
+  left: 60%;
+}
+
+.content-box:nth-child(3) {
+  top: 70%;
+  left: 60%;
+}

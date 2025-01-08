@@ -1,0 +1,35 @@
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.AboutUsSection {
+    border: solid black 4px;
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    width: 100vw; /* 100% del ancho de la pantalla */
+    height: auto; 
+}
+
+h2 { 
+    font-size: 3.5em;
+    color: black;
+}
+
+.Container {
+    z-index: 1;
+    border: solid red 1px;
+    display: flex;
+    gap: 20px;
+    width: 100vw;
+    padding: 20px;
+    
+}
+.Column {
+    flex: 1;
+    padding: 20px;
+}
+
+

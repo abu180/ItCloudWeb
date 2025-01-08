@@ -1,0 +1,55 @@
+.DepartamentContainer {
+    border: solid white 4px;
+    background-image: url('../../assets/ITCloudSolutions.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    padding: 0px;
+    margin: 0 auto;
+    width: 100vw;
+    height: 60vh;
+    box-sizing: border-box;
+}
+
+.DepartamentContent {
+    border:  white 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100vw;
+    height: 60vh;
+}
+
+.ContainerContent  {
+    border:  black 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 80vw;
+    text-align: center;
+}
+
+.DescriptionContent {
+    margin-block-start: 0.83em;
+    width: 60vw;
+}
+
+.ContainerContent h1  {
+    font-size: 3em;
+}
+
+
+.ContainerButton {
+    margin-block-start: 2em;
+
+}
+@media (max-width: 768px) {
+
+  }

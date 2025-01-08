@@ -1,0 +1,65 @@
+/* Sección principal */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 200vh;
+}
+.section::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: none;
+  opacity: 0.6;
+}
+
+/* Contenedor sticky */
+.sticky-container {
+  position: sticky;
+  top: 20vh;
+  height: 20vh;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 2rem;
+  line-height: 1;
+  color: white;
+}
+
+/* Contenedor de las imágenes en movimiento */
+.motion-div {
+  position: relative;
+  height: 100%;
+}
+
+/* Imágenes dentro de motion-figure */
+.motion-figure {
+  height: 100%;
+}
+.motion-figurePalette, .motion-figureDevTools {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: auto;
+}
+
+.motion-img {
+  height: 100%;
+  width: auto;
+}
+
+/* Párrafos con movimiento */
+.motion-p {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 40rem;
+  max-width: 90%;
+}
+
+.text-primary {
+  color: #A4C639; /* Ajusta el color según lo que necesites */
+}

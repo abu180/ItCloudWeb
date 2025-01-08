@@ -1,0 +1,33 @@
+.carousel {
+    width: 100%;
+    overflow: hidden; /* Oculta las imágenes fuera del contenedor */
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 25px; /* Espaciado entre las imágenes */
+  }
+  
+  .carousel-item {
+    min-width: 250px; /* Ajusta el ancho de cada elemento */
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .carousel-item img {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .carousel-item h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  

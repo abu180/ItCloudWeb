@@ -1,0 +1,13 @@
+/* Map.css */
+.MapContainer {
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden;
+  }
+  
+  .map {
+    position: absolute;
+    top: 50%; /* Centra el mapa inicialmente */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

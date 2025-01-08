@@ -1,0 +1,200 @@
+.WhoWeAre {
+    background-image: url('/ItCloudWhoWeAre.png');
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+
+.Column {
+    flex: 1; /* Cada columna ocupa el 50% del espacio disponible */
+    margin: 0 10px;
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+.firstParagraph {
+    width: 30vw;
+    margin-left: 260px;
+    margin-top: 140px;
+    overflow: hidden;
+}
+.firstParagraph-Title {
+    width: 25vw;
+    overflow: hidden;
+}
+.firstParagraph-Title p {
+    font-size: 1rem;
+    color: #3774a0;
+    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.firstParagraph-Content {
+    width: 25vw;
+    overflow: hidden;
+}
+.firstParagraph-Content p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 1rem;
+}
+.Column h1 {
+}
+
+
+
+
+
+
+.secondParagraph {
+    width: 30vw;
+    margin-left: 260px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+.secondParagraph-Content {
+
+}
+.secondParagraph-ContentFirst {
+    width: 25vw;
+}
+.secondParagraph-ContentFirst h3 {
+    font-size: 1.5rem;
+}
+.secondParagraph-ContentFirst p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 1rem;
+}
+
+.secondParagraph-ContentSecond {
+    margin-top: 20px;
+    width: 25vw;
+}
+.secondParagraph-ContentSecond h3 {
+    font-size: 1.5rem;
+}
+.secondParagraph-ContentSecond p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 1rem;
+}
+
+
+
+.AWS-GOOGLE-AZURE-Container {
+    border: solid red 2px; /* Solo para depuración */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    align-items: center; /* Centra las columnas verticalmente */
+    overflow: hidden;
+}
+
+.AWS-GOOGLE-AZURE-Title {
+    flex-direction: column;
+    align-items: flex-start; /* Cambiado "left" a "flex-start" */
+    display: flex;
+}
+
+.AWS-GOOGLE-AZURE-Title p {
+    font-size: 2rem;
+    padding-top: 5rem;
+    padding-left: 2.8rem;
+    color: rgb(34, 33, 33);
+}
+
+.AWS-GOOGLE-AZURE-ColumnContainer { 
+    display: flex;
+    justify-content: center; /* Centra las columnas dentro del contenedor */
+    align-items: center; /* Alinea las columnas verticalmente si es necesario */
+    gap: 20px; /* Espacio entre columnas */
+    width: 80vw; /* Reduce el ancho total del contenedor de columnas */
+    max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+}
+
+.AWS-GOOGLE-AZURE-Column {
+    border-radius: 10px;
+    border: solid blue 2px; /* Solo para depuración */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 10px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    width: 50vw; /* Ancho fijo para columnas */
+    max-width: 60vw; /* Limita el ancho de cada columna */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.carrouselColumn {
+    margin-top: 20px;
+    width: 100%; /* Asegura que el contenido del carrusel ocupe todo el ancho */
+}
+
+
+
+
+
+
+
+.aws-google-azure-Container {
+    width: 90%; /* Ancho del contenedor */
+    margin: 100px auto; /* Centra horizontalmente el contenedor */
+    padding: 20px; /* Espaciado interno */
+    background-color: #1f1e1e; /* Color de fondo */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    overflow: hidden; /* Oculta cualquier contenido desbordante */
+}
+.aws-google-azure-Container h1 {
+    text-align: center;
+    margin-top: 80px;
+}
+.Infrastucture-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el carrusel */
+    justify-content: center; /* Centra el contenido verticalmente */
+    width: 100%;
+    margin: 0 auto; /* Asegura que todo esté centrado horizontalmente */
+    margin-top: 100px;
+}
+.Development-Container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; /* Centra el carrusel */
+    justify-content: center; /* Centra el contenido verticalmente */
+    width: 100%;
+    margin: 0 auto; /* Asegura que todo esté centrado horizontalmente */
+    margin-top: 100px;
+}
+
+
+.InfrastuctureTitle-Container, .DevelopmentTitle-Container {
+    width: 48%; /* Asegura que el título ocupe todo el ancho */
+    margin-bottom: 0vh;
+}
+
+.InfrastuctureTitle-Container h3, .DevelopmentTitle-Container h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem; /* Tamaño del título */
+    color: #FFFFFF; /* Color del título */
+    margin: 0 0px; /* Espaciado lateral para mantener separación */
+}
+
+
+
+
+.AgileAndScalableInfrastucture-Container {
+    border: solid red 2px;
+    background-image: url('/Infrastucture.png');
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}

@@ -1,0 +1,16 @@
+.WhoWeAreContainer {
+    border: solid black 2px;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+p {
+    font-size: 0.8rem;
+}

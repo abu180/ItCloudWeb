@@ -1,0 +1,104 @@
+.section {
+    position: relative;
+    height: 210vh;
+}
+
+/* Contenedor sticky */
+.sticky-container {
+    position: sticky; /* sticky */
+    top: 50%; /* top-1/2 */
+    display: flex; /* flex */
+    transform-origin: center; /* origin-center */
+    transform: translateY(-50%); /* -translate-y-1/2 */
+    justify-content: center; /* justify-center */
+}
+
+/* Estilo para el primer motion div */
+.motion-div {
+    position: fixed; /* absolute */
+    left: 50%; /* left-1/2 */
+    top: 30%; /* top-1/2 */
+    display: flex; /* flex */
+    width: 50vw; /* w-[50vw] */
+    transform: translate(-50%, -50%) scale(var(--scale)); /* -translate-y-1/2 + scale */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+    justify-content: center; /* justify-center */
+    opacity: var(--opacity); /* estilo dinámico */
+}
+
+/* Estilo para la imagen principal */
+.main-image {
+    top: 10%;
+    height: auto; /* h-auto */
+    width: 100%; /* w-full */
+}
+
+/* Estilo para el avatar */
+.avatar {
+    position: absolute; /* absolute */
+    left: 13%; /* left-[13%] */
+    top: 50%; /* top-1/2 */
+    height: 1.5vw; /* h-[1.5vw] */
+    width: 1.5vw; /* w-[1.5vw] */
+    transform: translateY(50%); /* translate-y-1/2 */
+    border-radius: 50%; /* rounded-full */
+    border: 1px solid #c82; /* border-[#c82] */
+    object-fit: cover; /* object-cover */
+    will-change: transform; /* will-change-transform */
+}
+
+/* Estilo para el texto debajo del avatar */
+.avatar-text {
+    margin-top: 1rem; /* mt-3 */
+    display: block; /* block */
+    font-size: 2rem; /* text-2xl */
+    color: white; /* text-white */
+    text-align: center; /* opcional */
+}
+
+/* Icono de rama */
+.branch-icon {
+    margin-right: 0.75rem; /* mr-3 */
+    display: inline-block; /* inline-block */
+    height: 3rem; /* h-12 */
+    width: 3rem; /* w-12 */
+}
+
+/* Estilo para los párrafos */
+.paragraph {
+    position: absolute; /* absolute */
+    top: -50%; /* top-1/2 */
+    transform: translateY(calc(var(--y, 0))); /* translate-y-centered-offset */
+    font-size: 1.5rem; /* text-2xl o text-xl */
+    color: white; /* text-white */
+}
+
+.paragraph.primary {
+    color: #4ca; /* text-primary */
+}
+
+.paragraph-left {
+    left: 80px; /* left-[20px] */
+    width: 300px; /* w-[300px] */
+    padding-left: 1rem; /* pl-16 */
+}
+
+.paragraph-right {
+    right: 80px; /* right-[20px] */
+    width: 300px; /* w-[300px] */
+    padding-left: 1rem;
+    padding-right: 1rem; /* pr-16 */
+    line-height: 1.25;
+}
+
+.paragraphright{
+    transform: translateY(-50%);
+    top: 50%;
+    left: 20px;
+    width: 300px;
+    padding-left: 4rem;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    color: white;
+}

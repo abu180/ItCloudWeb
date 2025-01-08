@@ -1,0 +1,84 @@
+.carouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+    width: 100%; /* Ajusta el ancho del contenedor principal */
+    height: 100%;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin-top: 20vh;
+    background-color: #070606;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.carousel {
+    width: 100%; /* Ajusta el ancho del carrusel (80% del contenedor principal) */
+    max-width: 800px; /* Máximo ancho del carrusel */
+    overflow: hidden; /* Oculta las imágenes fuera del contenedor */
+    position: relative;
+    padding: 50px 0; /* Ajusta el padding */
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos */
+    transition: transform 0.5s ease-in-out; /* Suaviza el movimiento */
+     /* Solo un item visible a la vez */
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+    width: 100%; 
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px; /* Aumenta el padding para mayor espacio alrededor */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    color: #070606;
+}
+.carousel-item img {
+    width: 80%; /* Aumenta el tamaño de la imagen */
+    height: 80%; /* Mantiene la relación de aspecto */
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.carousel-item-title {
+    padding: 20px 10px;
+    margin-top: 15px;
+    width: fit-content;
+}
+.carousel-item-title h4 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 0.9rem;
+    width: fit-content;
+}
+
+
+.next-button, .prev-button {
+    position: absolute;
+    background-color: #0e2350;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    padding: 10px 20px; /* Aumenta el tamaño de los botones */
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 0.8rem;
+}
+.next-button:hover, .prev-button:hover {
+    background-color: #1b4781;
+}
+.prev-button {
+    left: 10px;
+}
+.next-button {
+    right: 10px;
+}

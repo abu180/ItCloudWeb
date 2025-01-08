@@ -1,0 +1,19 @@
+.floating-robot-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+    height: 40vh;  /* Asegura que la sección ocupe toda la altura de la ventana */
+  }
+  
+  .floating-robot-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .floating-robot {
+    width: 650px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+    object-fit: cover;
+  }
+  

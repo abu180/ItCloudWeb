@@ -1,0 +1,231 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Eliminar márgenes del body y html */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.homeSection {
+  border: solid white 4px;
+  background-image: url('./assets/Inicio.png');
+  background-size: cover; /* Cubre toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita repeticiones */
+  width: 100vw; /* 100% del ancho de la pantalla */
+  height: 100vh; 
+}
+
+.homeContent {
+  display: flex;
+  justify-content: center;
+  border:  black 1px;
+  height: 60vh;
+  width: 90vw;
+  overflow: hidden;
+}
+
+.Content {
+  border:  white 1px;
+  height: 60vh;
+  width: 80vw;
+  overflow: hidden;
+}
+
+.Content h1 {
+  font-size: 8em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.4em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+.Content h5 {
+  font-size: 2.5em;
+}
+
+.containerButton {
+  position: relative;
+  top: 95px;
+}
+
+
+@media (max-width: 1280px) {
+  .homeContent {
+    height: 60vh;
+    width: 90vw;
+    overflow: hidden;
+  }
+  .Content {
+    height: 60vh;
+    width: 80vw;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 6em;
+    margin-block-start: 0.63em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  h5 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .homeContent {
+    height: 60vh;
+    width: 90vw;
+    overflow: hidden;
+  }
+  .Content {
+    height: 60vh;
+    width: 80vw;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 6em;
+    margin-block-start: 0.63em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  h5 {
+    font-size: 1.5em;
+  }
+  .containerButton {
+    position: relative;
+    border:  red 1px;
+    top: 30px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .homeContent {
+    height: 60vh;
+    width: 90vw;
+    overflow: hidden;
+  }
+  .Content {
+    height: 60vh;
+    width: 80vw;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 6em;
+    margin-block-start: 0.63em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  h5 {
+    font-size: 1.5em;
+  }
+}
+
+
+@media (max-width: 412px) {
+  .homeContent {
+    height: 50vh;
+    width: 90vw;
+    overflow: hidden;
+  }
+  .Content {
+    height: 50vh;
+    width: 80vw;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 4em;
+    margin-block-start: 0.63em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+  .containerButton {
+    position: relative;
+    border:  red 1px;
+    top: 60px;
+  }
+}
+
+
+@media (max-width: 344px) {
+  .homeContent {
+    height: 60vh;
+    width: 90vw;
+    overflow: hidden;
+  }
+  .Content {
+    height: 60vh;
+    width: 80vw;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 3.5em;
+    margin-block-start: 0.63em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+  .containerButton {
+    position: relative;
+    border:  red 1px;
+    top: 80px;
+  }
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.caja {
+  width: 100%;
+  height: 2600px;
+  background-color: aqua;
+}
+
+.caja2 {
+  width: 100%;
+  height: 2600px;
+
+}

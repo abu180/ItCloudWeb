@@ -1,0 +1,68 @@
+.collaboration-section {
+    position: relative;
+    z-index: 10;
+    margin-top: -50vh;
+    height: 300vh;
+}
+
+/* Estilo para el contenedor interno */
+.section-inner {
+    margin-bottom: -120vh; /* mb-[-120vh] */
+    height: 420vh;         /* h-[420vh] */
+    width: 100%;           /* w-full */
+}
+
+/* Estilo para el contenedor sticky */
+.sticky-container {
+    position: sticky; /* sticky */
+    top: 10vh;        /* top-[10vh] */
+}
+
+/* Estilo para el contenedor centrado */
+.center-container {
+    display: flex;        /* flex */
+    justify-content: center; /* justify-center */
+}
+
+/* Estilo para el div principal de motion */
+.motion-div {
+    transform-origin: top; /* origin-top */
+}
+
+/* Estilo para la imagen principal */
+.main-image {
+    height: auto;          /* h-auto */
+    max-height: none;      /* max-h-none */
+    width: 70vw;           /* w-[70vw] */
+}
+
+/* Estilo para el contenedor de avatares */
+.avatar-group {
+    position: absolute;    /* absolute */
+    right: 10%;            /* right-[10%] */
+    top: 1.5%;             /* top-[1.5%] */
+    display: flex;         /* flex */
+    gap: 0.5rem;           /* gap-2 */
+}
+
+/* Estilo para cada avatar */
+.avatar {
+    height: 1.5vw;         /* h-[1.5vw] */
+    width: 1.5vw;          /* w-[1.5vw] */
+    border-radius: 50%;    /* rounded-full */
+    border: 1px solid;     /* border */
+    object-fit: cover;     /* object-cover */
+}
+
+/* Estilos para los bordes de los avatares */
+.avatar-one {
+    border-color: #4ca;    /* border-[#4ca] */
+}
+
+.avatar-two {
+    border-color: #c82;    /* border-[#c82] */
+}
+
+.avatar-three {
+    border-color: #f0f;    /* border-[#f0f] */
+}

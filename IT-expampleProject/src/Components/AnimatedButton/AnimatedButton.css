@@ -1,0 +1,25 @@
+.buttonContainer {
+    border: solid white 2px;
+    padding: 15px 40px;
+    position: relative;
+    background-color: transparent;
+    overflow: clip;
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+.circle {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    left: 22px;
+}
+.title {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    z-index: 1;
+    text-align: center;
+}
