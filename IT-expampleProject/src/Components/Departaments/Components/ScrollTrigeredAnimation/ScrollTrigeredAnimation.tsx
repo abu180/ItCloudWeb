@@ -60,7 +60,7 @@ const hue = (h: number) => `hsl(${h}, 100%, 50%)`
  */
 
 const container: React.CSSProperties = {
-    margin: "150px auto",
+    margin: "100px auto",
     maxWidth: 500,
     paddingBottom: 100,
     width: "100%",
@@ -70,10 +70,13 @@ const cardContainer: React.CSSProperties = {
     overflow: "hidden",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
+    /* alignItems: "center", */
     position: "relative",
     paddingTop: 20,
     marginBottom: -120,
+    width: 500,
+    height: 500,
+
 }
 
 const splash: React.CSSProperties = {
@@ -93,7 +96,7 @@ const card: React.CSSProperties = {
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 20,
-    background: "#f5f5f5",
+    background: "#ffffff",
     boxShadow:
         "0 0 1px hsl(0deg 0% 0% / 0.075), 0 0 2px hsl(0deg 0% 0% / 0.075), 0 0 4px hsl(0deg 0% 0% / 0.075), 0 0 8px hsl(0deg 0% 0% / 0.075), 0 0 16px hsl(0deg 0% 0% / 0.075)",
     transformOrigin: "10% 60%",
@@ -102,14 +105,7 @@ const card: React.CSSProperties = {
 /**
  * ==============   Data   ================
  */
-
+/* Contenido y color */
 const food: [string, number, number][] = [
     ["🍅", 340, 10],
-    ["🍊", 20, 40],
-    ["🍋", 60, 90],
-    ["🍐", 80, 120],
-    ["🍏", 100, 140],
-    ["🫐", 205, 245],
-    ["🍆", 260, 290],
-    ["🍇", 290, 320],
 ]
