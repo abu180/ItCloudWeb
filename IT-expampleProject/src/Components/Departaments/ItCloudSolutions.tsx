@@ -11,7 +11,7 @@ import AnimatedText from '../AboutUs/textanimation';
 import FixedCarousel from './Components/FixedCarrusel/FixedCarrusel';
 import { Collaboration } from '../../Pages/AboutUsComponents/Collaboration/Collaboration';
 import { FirstPage } from '../../Pages/AboutUsComponents/FirstPage/FirstPage';
-
+import ScrollTrigeredAnimation from './Components/ScrollTrigeredAnimation/ScrollTrigeredAnimation';
 
 const FirstPartInfrastuctureCarrouselContent = [
     { src: "/ArchitectureDesign.jpeg", title: "Consulting" },
@@ -192,7 +192,7 @@ const ItCloudSolutions: React.FC<ScrollAnimationProps> = ({ threshold }) => {
             {/* AGILE AND SCALABLE INFRASTUCTURE */}
             <div>
                 { /* <FirstPage /> */ }
-                
+                <ScrollTrigeredAnimation />
             </div>
         </div>
     )
