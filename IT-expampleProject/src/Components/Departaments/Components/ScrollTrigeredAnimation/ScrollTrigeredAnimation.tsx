@@ -44,7 +44,7 @@ const cardVariants: Variants = {
     },
     onscreen: {
         y: 50,
-        rotate: -10,
+        rotate: 0,
         transition: {
             type: "spring",
             bounce: 0.4,
