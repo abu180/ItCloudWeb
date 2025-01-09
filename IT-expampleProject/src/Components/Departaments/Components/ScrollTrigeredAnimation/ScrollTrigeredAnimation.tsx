@@ -60,7 +60,7 @@ const hue = (h: number) => `hsl(${h}, 100%, 50%)`
  */
 
 const container: React.CSSProperties = {
-    margin: "100px auto",
+    margin: "150px auto",
     maxWidth: 500,
     paddingBottom: 100,
     width: "100%",
