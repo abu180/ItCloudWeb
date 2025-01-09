@@ -191,7 +191,7 @@ const ItCloudSolutions: React.FC<ScrollAnimationProps> = ({ threshold }) => {
 
             {/* AGILE AND SCALABLE INFRASTUCTURE */}
             <div>
-                <FirstPage />
+                { /* <FirstPage /> */ }
                 
             </div>
         </div>

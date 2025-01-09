@@ -1,0 +1,2 @@
+import "./ScrollTrigeredAnimation.css";
+
