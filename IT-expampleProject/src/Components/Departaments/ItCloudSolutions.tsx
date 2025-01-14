@@ -13,6 +13,7 @@ import AnimatedText from '../AboutUs/textanimation';
 import FixedCarousel from './Components/FixedCarrusel/FixedCarrusel';
 import { Collaboration } from '../../Pages/AboutUsComponents/Collaboration/Collaboration';
 import { FirstPage } from '../../Pages/AboutUsComponents/FirstPage/FirstPage';
+import ItCloudCompetences from './Components/ItCloudCompetences/ItCloudCompetences';
 
 
 const FirstPartInfrastuctureCarrouselContent = [
@@ -77,6 +78,9 @@ const ItCloudSolutions: React.FC<ScrollAnimationProps> = ({ threshold }) => {
             </div>
             <div className='ServiceCatalogue-Container'>
                 <ServiceCatalogue />
+            </div>
+            <div className='ItCloudCompetences-Container'>
+                <ItCloudCompetences />
             </div>
             <div className="WhoWeAre">
                 <motion.div 

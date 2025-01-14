@@ -1,0 +1,45 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #8cc1ec;
+    height: 100vh;
+  }
+  .section::before {
+    content: "";
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background: none;
+    opacity: 0.6;
+  }
+
+
+  .sticky-container {
+    position: sticky;
+    margin-top: 20%;
+    height: 100%;
+    padding-left: 40%;
+    padding-right: 0%;
+    font-size: 2rem;
+    line-height: 1;
+    color: white;
+  }
+
+
+  .image-Container {
+    position: relative;
+    height: 100%;
+  }
+
+
+  .paragraph-Content {
+    position: absolute;
+    margin-top: 20%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 40rem;
+    max-width: 90%;
+  }

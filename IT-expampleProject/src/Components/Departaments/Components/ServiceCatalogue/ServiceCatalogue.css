@@ -71,8 +71,8 @@
   
   /* Posición específica para el primer círculo */
   .Circle1 {
-    top: 45%;
-    left: 30%;
+    top: 52%;
+    left: 35%;
     transform: translate(-50%, -50%);
   }
 
