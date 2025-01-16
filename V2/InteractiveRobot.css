@@ -1,0 +1,94 @@
+/* Estilos del robot interactivo */
+.interactive-robot-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: #f0f0f0; /* Fondo de la página */
+  }
+  
+  .robot {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .robot-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Estilo para la ventana del chatbot */
+  .chatbot-window {
+    position: absolute;
+    top: 220px;
+    width: 300px;
+    padding: 15px;
+    border: 2px solid #007bff;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Asegurarnos que el chatbot quede encima del robot */
+  }
+  
+  .chatbot-window h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  .chatbot-window p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .chat-content {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .chatbot-window input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .chatbot-window button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .chatbot-window button:hover {
+    background-color: #0056b3;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

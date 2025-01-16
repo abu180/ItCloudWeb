@@ -1,0 +1,53 @@
+/* src/Components/CloudLoader.css */
+
+.cloud-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+  }
+  
+  .cloud {
+    width: 50px;
+    height: 50px;
+    background-color: #00aaff; /* Color de la nube */
+    border-radius: 50%; /* Hace que la nube tenga forma redondeada */
+    position: relative;
+    animation: float 2s ease-in-out infinite; /* Animación de flotación */
+  }
+  
+  .cloud:before,
+  .cloud:after {
+    content: '';
+    position: absolute;
+    background-color: #00aaff;
+    border-radius: 50%;
+  }
+  
+  .cloud:before {
+    width: 40px;
+    height: 40px;
+    top: -15px;
+    left: 10px;
+  }
+  
+  .cloud:after {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: -15px;
+  }
+  
+  /* Animación para hacer que la nube "flote" */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
