@@ -7,6 +7,7 @@ import OrgChart from "./Components/OrganizationChart/OrganizationChart";
 import Navbar from "../Navbar/Navbar";
 import ITCloudSolutionsIntro from './Components/ITCloudSolutionsIntro/ITCloudSolutionsIntro';
 import ServiceCatalogue from './Components/ServiceCatalogue/ServiceCatalogue';
+import CircularLayout from './Components/ServiceCatalogue/ServiceCatalogueDraft';
 import WhoWeAre from "./Components/WhoWeAre/WhoWeAre";
 import { ItRobot } from "./Components/ItRobot/ItRobot";
 import AnimatedText from '../AboutUs/textanimation';
@@ -80,7 +81,7 @@ const ItCloudSolutions: React.FC<ScrollAnimationProps> = ({ threshold }) => {
                 <ServiceCatalogue />
             </div>
             <div className='ItCloudCompetences-Container'>
-                <ItCloudCompetences />
+                <CircularLayout />
             </div>
             <div className="WhoWeAre">
                 <motion.div 
