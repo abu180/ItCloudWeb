@@ -1,121 +1,121 @@
-
-
 .ServiceCatalogueWrapper {
-    position: relative;
-    height: 100vh; 
-  }
-  
-  .ServiceCatalogueWrapper::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-  }
-  
-  .StickyContainer {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f8f9fa; /* Color de fondo fijo */
-    z-index: 1; /* Asegúrate de que esté por encima de otros elementos */
-  }
-  
+  position: relative;
+  height: 300vh; /* Adjust this value as needed */
+}
+.ServiceCatalogueWrapper::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
 
-  .ServiceCatalogue-Cloud {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    height: 30%;
-  }
-  .ServiceCatalogue-Cloud img {
-    width: 100%;
-    height: 100%;
-  }
+.StickyContainer {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
 
+.ServiceCatalogue-Cloud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 30%;
+}
 
-  .Circle {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    background-color: #d9ecf9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    z-index: 2; /* Asegúrate de que el círculo esté encima del fondo */
-  }
-  
-  .Circle h3 {
-    font-size: 14px;
-    color: #003366;
-    margin-bottom: 8px;
-    text-align: center;
-  }
-  
-  .Circle p {
-    font-size: 12px;
-    color: #666;
-    margin: 0;
-    text-align: center;
-  }
-  
-  /* Posición específica para el primer círculo */
-  .Circle1 {
-    top: 52%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-  }
+.CircleContainer {
+  border: solid red 2px;
+  position: relative;
+  width: 500px; /* Tamaño del círculo contenedor */
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .Circle2 {
-    top: 33%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-  }
+.Circle {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #d9ecf9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transform-origin: center;
+}
+.Circle h3 {
+  font-size: 12px;
+  color: #003366;
+  margin-bottom: 5px;
+  transform: rotate(-0deg);
+  transform-origin: center;
+}
+.Circle p {
+  font-size: 10px;
+  color: #666;
+  margin: 0;
+  text-align: center;
+}
 
-  .Circle3 {
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.Circle1 {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  .Circle4 {
-    top: 33%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-  }
+.Circle2 {
+  top: 25%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
 
-  .Circle5 {
-    top: 52%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .TitleContianer {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-  }
-  .TitleContianer h1 {
-    font-family: "Open Sans", sans-serif;
-    color: #283241;
-    font-size: 4rem;
-    font-weight: normal;
-  }
-  .TitleContianer h4 {
-    text-align: center;
-    color: #283241;
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
+.Circle3 {
+  top: 75%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.Circle4 {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Circle5 {
+  top: 75%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.TitleContainer {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.TitleContainer h1 {
+  font-family: "Open Sans", sans-serif;
+  color: #283241;
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+.TitleContainer h4 {
+  text-align: center;
+  color: #283241;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
