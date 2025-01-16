@@ -7,7 +7,7 @@ export default function ServiceCatalogue() {
 
   const { scrollYProgress } = useScroll({
     target: targetRef, 
-    offset: ["0.8 end", "end start"], 
+    offset: ["start end", "end start"], 
   });
 
   const rotation = useTransform(scrollYProgress, [0, 1], [0, 360]);
